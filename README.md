@@ -31,10 +31,7 @@
 使用以下命令安装依赖：
 
 ```
-bash
 
-
-Copy code
 pip install pillow cairosvg
 ```
 
@@ -42,22 +39,15 @@ pip install pillow cairosvg
 
 1. **Ghostscript**（用于 PDF 转 TIFF）：
 
-   - macOS
-
-     ：
+   - macOS：
 
      ```
-     bash
      
-     
-     Copy code
      brew install ghostscript
      ```
-
-   - Ubuntu/Linux
-
-     ：
-
+     
+   - Ubuntu/Linux：
+   
      ```
      bash
      
@@ -65,9 +55,9 @@ pip install pillow cairosvg
      Copy code
      sudo apt install ghostscript
      ```
-
+     
    - **Windows**： [下载 Ghostscript](https://ghostscript.com/) 并安装。
-
+   
 2. **CairoSVG**（用于 SVG 转 TIFF）：
 
    - 脚本中自动调用 CairoSVG，无需额外安装工具。
@@ -87,23 +77,6 @@ pip install pillow cairosvg
    python convert_to_tiff.py
 
 
-
-
-
-
-
-本工具是一个 Python 脚本，用于批量将指定目录及其子目录中的以下类型文件转换为彩色的 TIFF 格式文件：
-
-- **PDF 文件**
-- **SVG 文件**
-- **PNG 文件**
-- **JPG/JPEG 文件**
-
-转换后的文件将自动存储在每个目录的 `tiff` 文件夹中。如果某个目录的 `tiff` 文件夹为空，会自动删除该文件夹。
-
-用户可以指定处理目录以及输出 TIFF 文件的分辨率（默认 300 DPI）。
-
-------
 
 ## 功能特点
 
